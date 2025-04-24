@@ -1,0 +1,90 @@
+.products_row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.one_item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+  overflow: hidden;
+  height: 384px;
+  width: 1460px;
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 20px;
+  position: relative;
+}
+.items {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 304px;
+  width: 1420px;
+  overflow: hidden;
+  position: relative;
+}
+
+.one_item h1 {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.right_arrow_styles {
+  visibility: visible;
+  width: 56px;
+  display: flex;
+  align-items: center;
+  height: 304px;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  padding: 0;
+  background-color: white;
+  cursor: pointer;
+}
+.right_arrow {
+  border-radius: 8px 0 0 8px;
+  box-shadow: -1px 0 2px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  width: 56px;
+  height: 100px;
+  background-color: white;
+}
+i {
+  height: 20px;
+  width: 12px;
+  background-size: 12px 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxMyAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuOTM1NzYgMjBDMS43Mjg3NyAxOS45OTkyIDEuNTI2NjkgMTkuOTM5NyAxLjM1NTA2IDE5LjgyOTFDMS4xODM0NCAxOS43MTg2IDEuMDQ5OTggMTkuNTYxOSAwLjk3MTU2NyAxOS4zNzg5QzAuODkzMTUxIDE5LjE5NTggMC44NzMyOTcgMTguOTk0NyAwLjkxNDUxOCAxOC44MDA5QzAuOTU1NzM4IDE4LjYwNzEgMS4wNTYxOCAxOC40MjkzIDEuMjAzMTQgMTguMjkwMUw5LjkzMTcgMTAuMDAwNEwxLjIwMzE0IDEuNzEwNzJDMS4xMDUwNSAxLjYxNzc2IDEuMDI3MTkgMS41MDcxNyAwLjk3NDA1NCAxLjM4NTMxQzAuOTIwOTIgMS4yNjM0NiAwLjg5MzU2NCAxLjEzMjc2IDAuODkzNTY0IDEuMDAwNzVDMC44OTM1NjQgMC44Njg3NDYgMC45MjA5MiAwLjczODA0NiAwLjk3NDA1NCAwLjYxNjE5MUMxLjAyNzE5IDAuNDk0MzM3IDEuMTA1MDUgMC4zODM3NCAxLjIwMzE0IDAuMjkwNzgxQzEuMzk5MjQgMC4xMDQ1MzggMS42NjQ1IDAgMS45NDA5OSAwQzIuMjE3NDggMCAyLjQ4Mjc0IDAuMTA0NTM4IDIuNjc4ODQgMC4yOTA3ODFMMTIuODkzNiAxMC4wMDA0TDIuNjc4ODQgMTkuNzFDMi41ODEwNCAxOS44MDI3IDIuNDY1MDYgMTkuODc2IDIuMzM3NTUgMTkuOTI1OEMyLjIxMDA0IDE5Ljk3NTUgMi4wNzM0OSAyMC4wMDA3IDEuOTM1NzYgMjBaIiBmaWxsPSIjMEYxMTExIi8+Cjwvc3ZnPg==);
+}
+
+.categories {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+  overflow: hidden;
+  height: 281px;
+  width: 1460px;
+  padding: 10px 20px;
+  background-color: white;
+  margin-bottom: 15px;
+  position: relative;
+}
+.categories .right_arrow_styles {
+  top: -10px;
+}
+.categories h1 {
+  font-size: 21px;
+  margin-top: 12px;
+  margin-bottom: 3px;
+}
