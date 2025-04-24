@@ -7,7 +7,6 @@ import Subtotal from "./Subtotal";
 const FinalCheckout = () => {
   const shoppingContext = useContext(ShoppingContext);
   const { basket, user } = shoppingContext;
-  console.log("BASKET: ", basket);
 
   return (
     <div className="checkout">
@@ -28,7 +27,7 @@ const FinalCheckout = () => {
               id={item.id}
               title={item.title}
               image={item.image}
-              price={500}
+              price={item.price}
             />
           ))}
         </div>

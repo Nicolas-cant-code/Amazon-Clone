@@ -27,9 +27,9 @@
   height: 180px;
 }
 
-.checkout_product_title {
+.checkout_product_title h2 {
   font-size: 17px;
   font-weight: 800;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
 }

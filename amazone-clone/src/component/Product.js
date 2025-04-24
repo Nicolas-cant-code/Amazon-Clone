@@ -2,12 +2,12 @@ import React, { useContext } from "react";
 import "./Product.css";
 import ShoppingContext from "../component/shopping/ShoppingContext";
 
-const Product = ({ id, title, image, anchor }) => {
+const Product = ({ id, title, image, anchor, price }) => {
   const shoppingContext = useContext(ShoppingContext);
   const { addToBasket } = shoppingContext;
 
   const addToBasketHandler = () => {
-    addToBasket({ id, title, image, anchor });
+    addToBasket({ id, title, image, anchor, price });
   };
   // const addToBasketHandler = () => {
   //   dispatch({
