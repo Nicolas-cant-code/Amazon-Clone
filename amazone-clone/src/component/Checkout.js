@@ -9,7 +9,6 @@ const Checkout = ({ id, image, title, price, hideButton }) => {
   const removeFromBasketHandler = () => {
     removeFromBasket({ id: id });
   };
-  console.log("BASKET: ", title);
 
   return (
     <div className="checkout_product">

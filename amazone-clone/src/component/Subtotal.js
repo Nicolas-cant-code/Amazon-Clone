@@ -1,8 +1,15 @@
 import React, { useContext } from "react";
-import CurrencyFormat from "react-currency-format";
 import "./Subtotal.css";
 import ShoppingContext from "./shopping/ShoppingContext";
 import { useHistory } from "react-router-dom";
+
+// Custom function to format currency
+const formatCurrency = (value) => {
+  return new Intl.NumberFormat("en-ZA", {
+    style: "currency",
+    currency: "ZAR", // South African Rand
+  }).format(value);
+};
 
 const Subtotal = () => {
   const history = useHistory();
@@ -11,22 +18,13 @@ const Subtotal = () => {
 
   return (
     <div className="subtotal">
-      <CurrencyFormat
-        renderText={(value) => (
-          <>
-            <p>
-              Subtotal ({basket?.length} items): <strong>{value}</strong>
-            </p>
-            <small className="subtotal_gift">
-              <input type="checkbox" /> This order contains a gift
-            </small>
-          </>
-        )}
-        decimalScale={2}
-        value={getBasketTotal(basket)}
-        displayType={"text"}
-        prefix={"R"}
-      />
+      <p>
+        Subtotal ({basket?.length} items):{" "}
+        <strong>{formatCurrency(getBasketTotal(basket))}</strong>
+      </p>
+      <small className="subtotal_gift">
+        <input type="checkbox" /> This order contains a gift
+      </small>
       <button onClick={(event) => history.push("/payment")}>
         Proceed To Checkout
       </button>

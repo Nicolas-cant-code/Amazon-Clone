@@ -1,5 +1,7 @@
 import "./App.css";
 import { Route, Switch, Redirect } from "react-router-dom";
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
 import Home from "./component/Home";
 import Products from "./component/Products";
 import Header from "./component/layout/Header";
@@ -11,6 +13,10 @@ import { auth } from "./firebase";
 import { useContext, useEffect } from "react";
 import FinalCheckout from "./component/FinalCheckout";
 import Payment from "./component/Payment";
+
+const promise = loadStripe(
+  "pk_test_51RHfnx4RjWLPJ9nyvI6jMvIygUGAphjhOGA4HXiiNb7DY5XUbn6K4F2Z4zk6ygX2Rk1Rue7ZigTE1TaOwK1Tk5az00rDAQzGND"
+);
 
 function App() {
   const shoppingContext = useContext(ShoppingContext);
@@ -47,7 +53,9 @@ function App() {
             <FinalCheckout />
           </Route>
           <Route path="/payment">
-            <Payment />
+            <Elements stripe={promise}>
+              <Payment />
+            </Elements>
           </Route>
           <Route path="/login">
             <Login />

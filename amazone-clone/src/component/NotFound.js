@@ -8,7 +8,7 @@ const NotFound = () => {
       <Link to="/">
         <img
           src="https://i.insider.com/5b4cfd1a7708e9066f07cf17?width=700"
-          alt=""
+          alt="Cute Dog"
         />
       </Link>
     </div>

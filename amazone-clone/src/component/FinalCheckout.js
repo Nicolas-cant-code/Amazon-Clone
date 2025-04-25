@@ -1,3 +1,4 @@
+/* eslint-disable */
 import "./FinalCheckout.css";
 import { React, useContext } from "react";
 import ShoppingContext from "./shopping/ShoppingContext";
