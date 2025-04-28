@@ -52,7 +52,7 @@ const Payment = () => {
       .then(({ paymentIntent }) => {
         // paymentIntent = payment confirmation
         // Store the order in the database
-        db.collection("user")
+        db.collection("users")
           .doc(user?.uid)
           .collection("orders")
           .doc(paymentIntent.id)

@@ -13,6 +13,7 @@ import { auth } from "./firebase";
 import { useContext, useEffect } from "react";
 import FinalCheckout from "./component/FinalCheckout";
 import Payment from "./component/Payment";
+import Orders from "./component/Orders";
 
 const promise = loadStripe(
   "pk_test_51RHfnx4RjWLPJ9nyvI6jMvIygUGAphjhOGA4HXiiNb7DY5XUbn6K4F2Z4zk6ygX2Rk1Rue7ZigTE1TaOwK1Tk5az00rDAQzGND"
@@ -20,7 +21,7 @@ const promise = loadStripe(
 
 function App() {
   const shoppingContext = useContext(ShoppingContext);
-  const { setUser } = shoppingContext;
+  const { user, setUser } = shoppingContext;
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
       console.log("User is -> ", authUser);
@@ -56,6 +57,9 @@ function App() {
             <Elements stripe={promise}>
               <Payment />
             </Elements>
+          </Route>
+          <Route path="/orders">
+            <Orders user={user} />
           </Route>
           <Route path="/login">
             <Login />
