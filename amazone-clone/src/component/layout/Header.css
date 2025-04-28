@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.header_logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 7px;
+  fill: white;
+  padding: 10px 10px 0px 10px;
+  border: 1px solid white;
+  border: 1px solid transparent;
+}
+.header_logo:hover {
+  border: 1px solid white;
+}
+
+.searchbar {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  border-radius: 24px;
+  margin: 0px 15px;
+  position: relative;
+}
+
+.headerInput {
+  height: 20px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+.searchIcon {
+  padding: 8px;
+  background-color: #febd69;
+  cursor: pointer;
+  align-self: center;
+}
+.searchIcon:hover {
+  background-color: #ffaf46;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.header_option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid transparent;
+  position: relative;
+}
+.header_option:hover {
+  border: 1px solid white;
+}
+
+.SignIn {
+  font-size: 10px;
+}
+
+.Returns {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.Basket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header_basketCount {
+  margin-left: 25px;
+  margin-right: 8px;
+  position: absolute;
+  top: 7px;
+  left: 6px;
+}
+
+.nav_bigger {
+  font-weight: 700;
+}
