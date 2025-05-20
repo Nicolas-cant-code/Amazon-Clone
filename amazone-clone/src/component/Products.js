@@ -14,58 +14,64 @@ const Products = () => {
           title="Shop Books"
           image="https://images-eu.ssl-images-amazon.com/images/G/53/RBSxFELA/2025/Books_CC0.5x._SY304_CB546927798_.jpg"
           anchor="Shop now"
-          price={500}
+          price={3700}
+          rating={4}
         />
         <Product
           id="2"
           title="Shop Electronics"
           image="https://images-eu.ssl-images-amazon.com/images/G/53/RBSxFELA/2025/Homepage/Electronics_CC0.5x._SY304_CB546927220_.jpg"
           anchor="Discover more"
-          price={500}
+          price={4200}
+          rating={5}
         />
         <Product
           id="3"
           title="Shop Personal Care"
           image="https://images-eu.ssl-images-amazon.com/images/G/53/RBSxFELA/2025/Personal_care_CC0.5x._SY304_CB546915412_.jpg"
           anchor="Discover more"
-          price={500}
+          price={1500}
+          rating={4}
         />
         <Product
           id="4"
           title="Shop Beauty Essentials"
           image="https://images-eu.ssl-images-amazon.com/images/G/53/RBSxFELA/2025/Homepage/Beauty_cc0.5x._SY304_CB546930076_.jpg"
           anchor="Discover More"
-          price={500}
+          price={1000}
+          rating={3}
         />
-      </div>
-      <div className="products_row">
         <Product
           id="5"
           title="50% off Polaroid Airpad Speaker"
           image="https://images-eu.ssl-images-amazon.com/images/G/53/RBSxFELA/BTS25-final/Category-cards/Desktop/polaroid_cat_card0.5x._SY304_CB545598590_.jpg"
           anchor="Shop now"
-          price={500}
+          price={6420}
+          rating={4}
         />
         <Product
           id="6"
           title="Shop Mzansi"
           image="https://images-eu.ssl-images-amazon.com/images/G/53/RBSxFELA/2025/Homepage/2_Shop_Mzansi_DT_Cat_Card_low_res._SY304_CB546926871_.jpg"
           anchor="Discover more"
-          price={500}
+          price={890}
+          rating={5}
         />
         <Product
           id="7"
           title="Shop Personal Care"
           image="https://images-eu.ssl-images-amazon.com/images/G/53/RBSxFELA/2025/BuzzDeals/Personal_care_CC0.5x._SY304_CB545641780_.jpg"
           anchor="Shop now"
-          price={500}
+          price={5000}
+          rating={2}
         />
         <Product
           id="8"
           title="Shop Hair Care"
           image="https://images-eu.ssl-images-amazon.com/images/G/53/RBSxFELA/Homepage2024/WomensDay/Herobanners/Hair_Care_CC_-_DT_-_Low_RES._SY304_CB566462616_.jpg"
           anchor="Discover More"
-          price={500}
+          price={2500}
+          rating={3}
         />
       </div>
       <div className="one_item">

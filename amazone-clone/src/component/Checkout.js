@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import ShoppingContext from "./shopping/ShoppingContext";
 import "./Checkout.css";
 
-const Checkout = ({ id, image, title, price, hideButton }) => {
+const Checkout = ({ id, image, title, price, hideButton, rating }) => {
   const shoppingContext = useContext(ShoppingContext);
   const { removeFromBasket } = shoppingContext;
 
@@ -21,6 +21,19 @@ const Checkout = ({ id, image, title, price, hideButton }) => {
         </div>
 
         <div className="product_info">
+          <div className="stars">
+            <p>{rating}</p>
+            <p className="rating">
+              {Array(rating)
+                .fill()
+                .map((_, i) => (
+                  <span key={i} role="img" aria-label="star">
+                    ⭐
+                  </span>
+                ))}
+            </p>
+          </div>
+
           <div className="checkout_price">
             <small>R</small>
             <strong>{price}</strong>

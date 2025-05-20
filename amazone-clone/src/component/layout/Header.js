@@ -47,7 +47,7 @@ const Header = () => {
         <Link to={user === null ? "/login" : "/account"}>
           <div className="header_option" onClick={handleAuthentication}>
             <span className="signIn">
-              Hello {user === null ? ", sign in" : user.email}
+              Hello {user === null ? ", sign in" : user.email.split("@")[0]}
             </span>
             <span className="nav_bigger">
               {user !== null ? "Sign out" : "Account and Lists"}
@@ -55,10 +55,12 @@ const Header = () => {
           </div>
         </Link>
 
-        <div className="header_option">
-          <span className="returns">Returns</span>
-          <span className="nav_bigger">& Orders</span>
-        </div>
+        <Link to="/orders">
+          <div className="header_option">
+            <span className="returns">Returns</span>
+            <span className="nav_bigger">& Orders</span>
+          </div>
+        </Link>
 
         <Link to="/final-checkout">
           <div className="header_option">

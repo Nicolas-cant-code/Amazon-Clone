@@ -37,7 +37,7 @@ const Payment = () => {
     getClientSecret();
   }, [basket]);
 
-  console.log("The secret is >>> ", clientSecret);
+  // console.log("The secret is >>> ", clientSecret);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -114,7 +114,8 @@ const Payment = () => {
                 id={item.id}
                 title={item.title}
                 image={item.image}
-                price={500}
+                rating={item.rating}
+                price={item.price}
               />
             ))}
           </div>

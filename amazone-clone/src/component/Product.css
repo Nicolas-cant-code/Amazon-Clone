@@ -2,22 +2,22 @@
   justify-content: flex-end;
   margin: 10px;
   padding: 20px;
-  width: 310px;
-  height: 380px;
+  /* width: 310px;
+  height: 380px; */
   min-width: 100px;
   background-color: white;
   z-index: 1;
+  position: relative;
+  flex-wrap: wrap;
 }
 
 .images img {
   box-sizing: content-box;
-  width: 310px;
+  width: 100%;
   flex-grow: 1;
-  height: 303.7px;
 }
 .product_info {
-  margin-top: 10px;
-  color: rgb(33, 98, 161);
+  margin-top: 4px;
 }
 
 .image_a:hover {
@@ -39,7 +39,17 @@
 p {
   font-size: 13px;
 }
+.stars {
+  display: flex;
+  align-items: center;
+}
+.rating {
+  margin: 3px 0px 6px 4px;
+}
 
-#small {
-  height: 276.41px;
+.products button {
+  padding: 8px 5px;
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
 }
